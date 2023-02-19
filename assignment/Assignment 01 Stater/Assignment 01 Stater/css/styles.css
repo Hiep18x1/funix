@@ -118,9 +118,10 @@ table ul{
 
 
 
-
+/* info  */
 #info{
     position: relative;
+    background-color: rgba(66, 160, 160, 0.075);
 }
 
 #info h1{
@@ -141,12 +142,18 @@ table ul{
     position: absolute;
     right: 0;
     top: 0;
-    width: 113px;
+    width: 15%;
     height: 100%;
+    background-color: #c9cea7ce;
 }
+
 
 .avatar img {
     max-width: 100%;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 113px;
 }
 
 #target {
