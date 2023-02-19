@@ -1,0 +1,198 @@
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+ html{
+    box-sizing: border-box;
+ }
+ 
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+
+    padding: 40px
+}
+
+/* Create timeline */
+.timeline::before{
+    content: "";
+    background-color: #201f1f96;
+    position: absolute;
+    bottom: 10px;
+    top: 0;
+    left: 6px;
+    width: 1px;
+}
+
+
+.timeline tr{
+    position: relative;
+}
+.timeline tr::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    top: 15px;
+    left: -24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+
+/* Section */
+.section{
+    margin: 0 40px 40px 40px;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-weight: 550;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+
+.section p{
+    line-height: 1,2;
+}
+
+.section p, .section li{
+    font-weight: 450; 
+    line-height: 1.5 ;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr {
+    border-bottom: 1px solid  rgba(184, 178, 178, 0.5);
+}
+
+table td{
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+table td:first-child{
+    width: 30%;
+}
+
+table ul{
+    list-style-type: "- ";
+    margin-left: 7px;
+}
+
+
+
+
+
+#info{
+    position: relative;
+}
+
+#info h1{
+    color: #0e2452;
+}
+
+#info p{
+    margin: 5px;
+}
+
+#info span{
+    font-weight: 600;
+    display: inline-block;
+    width: 120px;
+}
+
+#info .avatar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 113px;
+    height: 100%;
+}
+
+.avatar img {
+    max-width: 100%;
+}
+
+#target {
+
+}
+
+
+
+#infor span {
+
+}
+
+#target{
+    /* position: relative; */
+}
+
+/* education */
+#education .section-content{
+    position: relative;
+}
+
+#education table, #experience table{
+    margin-left:  25px ;
+}
+
+/* experience */
+#experience .section-content{
+    position: relative;
+}
+
+
+
+/* hobby */
+#hobby ul{
+    padding-left: 20px;
+}
+
+#project ul{
+    padding-left: 25px;
+}
+
+#contact ol{
+    margin-left: 20px;
+}
+#contact a{
+    color: blue;
+    text-decoration: none;
+}
+
