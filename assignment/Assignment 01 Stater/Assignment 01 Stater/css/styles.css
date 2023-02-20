@@ -2,10 +2,9 @@
 *{
     margin: 0;
     padding: 0;
-}
- html{
     box-sizing: border-box;
- }
+}
+ 
  
 .cv-document {
 	box-sizing: border-box;
@@ -35,40 +34,12 @@
     box-shadow: 0 0 1px rgba(0,0,0,.5);
     background-color: #fff;
     position: relative;
-
     padding: 40px
 }
 
-/* Create timeline */
-.timeline::before{
-    content: "";
-    background-color: #201f1f96;
-    position: absolute;
-    bottom: 10px;
-    top: 0;
-    left: 6px;
-    width: 1px;
-}
 
 
-.timeline tr{
-    position: relative;
-}
-.timeline tr::before{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    top: 15px;
-    left: -24px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-
-
-/* Section */
+/* CSS chung cho các section */
 .section{
     margin: 0 40px 40px 40px;
 }
@@ -76,52 +47,42 @@
 .section-title{
     text-transform: uppercase;
     font-weight: 550;
-    border-bottom: 1px solid black;
-    margin-bottom: 30px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.952);
+    margin-bottom: 20px;
     padding-bottom: 5px;
 }
 
-
-.section p{
-    line-height: 1,2;
+.section p, .section ul, .section ol{
+    line-height: 1.5;
+    font-weight: 520;
 }
 
-.section p, .section li{
-    font-weight: 450; 
-    line-height: 1.5 ;
+/* Tạo layout v các thẻ div */
+.row{
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+    padding-bottom: 5px;
+    margin-bottom: 10px ;
 }
 
-/* Table */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table tr {
-    border-bottom: 1px solid  rgba(184, 178, 178, 0.5);
-}
-
-table td{
-    padding: 10px 0;
-    vertical-align: top;
-}
-
-table td:first-child{
+.left{
+    display: inline-block;
     width: 30%;
+    /* background-color: pink; */
+    vertical-align: top;
+    white-space: normal;
 }
 
-table ul{
-    list-style-type: "- ";
-    margin-left: 7px;
+.right{
+    display: inline-block;
+    width: 70%;
+    /* background-color: rgba(26, 97, 26, 0.356); */
+    white-space: normal;
 }
 
-
-
-
-/* info  */
+/* Thông tin cá nhân  */
 #info{
     position: relative;
-    background-color: rgba(66, 160, 160, 0.075);
 }
 
 #info h1{
@@ -129,11 +90,11 @@ table ul{
 }
 
 #info p{
-    margin: 5px;
+    margin: 9px;
 }
 
 #info span{
-    font-weight: 600;
+    font-weight: bold;
     display: inline-block;
     width: 120px;
 }
@@ -144,62 +105,90 @@ table ul{
     top: 0;
     width: 15%;
     height: 100%;
-    background-color: #c9cea7ce;
 }
 
-
-.avatar img {
-    max-width: 100%;
+#info  img {
     position: absolute;
-    right: 3%;
-    top: 0;
-    width: 113px;
+    display: block;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
 }
 
-#target {
-
+#info a{
+    text-decoration: none;
+    color: inherit;
+    
 }
 
-
-
-#infor span {
-
-}
-
-#target{
-    /* position: relative; */
-}
-
-/* education */
-#education .section-content{
-    position: relative;
-}
-
-#education table, #experience table{
-    margin-left:  25px ;
-}
-
-/* experience */
-#experience .section-content{
-    position: relative;
+/* Học vấn + kinh nghiệm làm việc + Hoạt động*/
+#education .right p:first-child,
+#experience .right p:first-child,
+#activity .right p:first-child{
+    font-weight: 650;
 }
 
 
+#experience li{ 
+    margin-left: 15px;
+}
 
-/* hobby */
-#hobby ul{
-    padding-left: 20px;
+/* Kỹ năng */
+#skill .left p{
+    font-weight: 650;
+}
+
+/* Sở thích + Dự án + Liên hệ*/
+#hobby li, #project li, #contact li{
+    margin-left: 18px;
 }
 
 #project ul{
-    padding-left: 25px;
+    margin-bottom: 10px;
 }
 
-#contact ol{
-    margin-left: 20px;
+#project span{
+    font-weight: 600;
 }
 #contact a{
-    color: blue;
     text-decoration: none;
+}
+
+/* Tạo timeline cho phần học vấn và kinh nghiệm làm việc  */
+#education .section-content,
+#experience .section-content {
+    position: relative;
+    margin-left: 15px;
+}
+
+.timeline::before{
+    content: "";
+    background-color: #201f1f44;
+    position: absolute;
+    bottom: 13px;
+    top: 0;
+    left: -12px;
+    width: 1px;
+} 
+
+#education .row,
+#experience .row
+{
+    position: relative;
+}
+
+#education .row::before,
+#experience .row::before
+{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.719);
+    top: 5px;
+    left: -15.5px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
