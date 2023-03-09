@@ -25,8 +25,8 @@
 }
 
 html{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    color:  #495057;
+    font-family: 'inter' ,sans-serif;
+    color: var(--gray);
 }
 
 .bg-grey {
@@ -37,24 +37,19 @@ section > .container{
     width: 1170px;
     margin: auto;
     display: block;
-    padding: 30px 50px;
-}
-
-
-h1{
-    padding: 32px 0 48px 0;
+    /* padding: 30px 50px; */
 }
 
 /* Banner */
 #banner{
-    height: 50vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/banner.jpg);
     background-size: cover;
     color: #e9ecef;
     position: relative;
 }
 
-#banner div{
+.banner-content{
     position: absolute;
     top: 35%;
     left: 50%;
@@ -62,56 +57,61 @@ h1{
     text-align: center;
 }
 
-#banner div h1{
+.banner-content h1{
     font-size: 44px;
     font-weight: 400;
     letter-spacing: -1px;
+    padding-bottom: 20px ;
 }
 
 /* Nav-bar */
 #nav-bar {
+    position: relative;
 }
-
 
 #nav-bar .container{
-    padding: 0;
     display: flex;
     justify-content: center;
-    height: 40px;
-}
-
-#nav-bar a:link,
-#nav-bar a:visited{
-    text-decoration: none;
-    color:  #343a40;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 520;
-    border-left: solid 1px black;
-    padding: 0 15px;
-    display: flex;
     align-items: center;
 }
 
-#nav-bar a:last-child {
-    border-right: solid 1px black;
+#nav-bar .nav{
+    flex-basis: 150px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 520;
+    border-left: solid 1px #e9ecef;
+    border-right: solid 1px #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    padding: 12px 0;
 }
 
-#nav-bar a:nth-child(3){
-    padding: 0 50px;
+
+#nav-bar .nav i{
+    color: var(--blue);
+    padding-right: 10px;
+}
+
+
+#nav-bar .nav3{
+    flex-basis: 300px ;
     text-align: center;
 }
 
-#nav-bar a:nth-child(3) p{
-    text-transform: capitalize;
-    color: #868e96;
-    font-size: 10px;
-}
-#nav-bar i{
-    padding-right: 5px;
-}
+/* nav-bar avatar */
+#nav-bar img{
 
+    transform: scale(6);
+    border: 1px solid #f1f3f5 ;
+    border-radius: 50%;
+    z-index: 2;
+}
 /* About */
+
 #about .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -127,22 +127,27 @@ h1{
     )
 
 }
-
+/* Target */
 #target{
-    padding-right: 40px;
+    padding: 64px 64px 32px 32px;
 }
 
+#target h1{
+    margin-bottom: 24px;
+}
 
-
+/* Personal info */
 #personal-info{
-    padding-left: 32px;
+    padding: 64px 64px 32px 64px;
 } 
+
+#personal-info h1{
+    margin-bottom: 24px;
+}
 
 #personal-info ul{
     list-style: none;
-}
-#personal-info li {
-    padding-bottom: 8px;
+    line-height: 1.5;
 }
 #personal-info span{
     font-weight: 600;
@@ -150,9 +155,12 @@ h1{
 
 #personal-info .info-social{
     color:  var(--blue);
-    padding: 24px 0;
+    margin-top: 24px;
 }
 
+#personal-info .info-social i{
+    padding-right: 12px ;
+}
 /* job-info */
 
 /* CSS chung cho job-infor  */
@@ -170,13 +178,14 @@ h1{
 
 #job-info .container>div {
     border: 1px solid #00000011;
-    padding: 32px 24px 48px 48px;
+    padding: 48px 24px 48px 48px;
 }
 
 #job-info h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 48px;
 }
 
 #job-info i{
@@ -244,19 +253,17 @@ h1{
 
  }
 
- #hobby .content{
+ #hobby .content-hobby{
     display: flex;
     gap: 16px;
     font-size: 12px;
     text-align: center;
- }
-
- #hobby .content div{
-    flex: 0 0 auto;
+    
  }
 
 
- #hobby .content i{
+
+ #hobby .content-hobby i{
     font-size: 14px;
     color: var(--blue);
     border: 1px solid #339af0;
@@ -290,6 +297,15 @@ h1{
 
 /* Chứng chỉ giải thưởng */
 
+#certificate .container{
+    padding: 48px 24px 48px 24px;
+}
+
+#certificate h1{
+    margin-bottom: 32px;
+}
+
+
 /* Tạo gird layout   với 2 hàng và 2 cột */
 .certificate-content{
     display: grid;
@@ -300,14 +316,10 @@ h1{
 .certificate-content>div{
     display: flex;
     gap: 30px;
-    /* background-color: red; */
-    padding-left: 20px;
     margin-bottom: 40px;
     font-size: 12px;
 
 }
-
-
 
 .certificate-content img{
     height: 100px;
@@ -318,14 +330,11 @@ h1{
 }
 
 /* certificate-detail */
-.certificate-detail{
-    color: var(--gray);
-}
 
 .certificate-detail ul{
     list-style: none;
 }
-
+ 
 .certificate-detail li{
     position: relative;
     padding-left: 10px;
@@ -341,9 +350,39 @@ h1{
 
 
 /* Tạo đường kẻ  */
+.certificate-item-2{
+    position: relative;
+}
+.certificate-item-2::before{
+    content: "";
+    width: 2px;
+    background-color: #d6c08d;
+}
+
+
+#certificate .container{
+    position: relative;
+}
+#certificate .container::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #d6c08d;
+    left: 24 px;
+    top: 50%;
+    position: absolute;
+}
 
 
 /* Dự án */
+#project .container{
+    padding: 48px 24px 48px 24px;
+}
+
+#project h1{
+    margin-bottom: 32px;
+}
+
 .project-content{
     display: flex;
     gap: 32px;
@@ -363,7 +402,7 @@ h1{
 
 .project-detail h2{
     font-size: 16px;
-    padding: 16px 12px;
+    padding: 24px 12px;
     border: 1px solid #f1f3f5 ;
 
 }
@@ -372,6 +411,7 @@ h1{
 .project-detail div:nth-child(2){
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 12px;
     font-size: 12px;
     padding: 12px 0px ;
@@ -401,17 +441,20 @@ h1{
 }
 
 /* Footer */
+#footer .container{
+    padding: 32px 24px 32px 24px;
+}
 #footer ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 32px;
 }
 
 #footer li{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px;
     font-size: 12px;
 }
 

@@ -6,31 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Assignment 02</title>
   </head>
   <body>
+    <!-- Banner -->
     <div id="banner" style="padding: 50px">
-      <div>
-        <h1>Nguyễn Văn A</h1>
-        <span>Full Stack Developer</span>
+      <div class="banner-content">
+        <h1>Nguyễn Tuấn Hiệp</h1>
+        <p>Full Stack Developer</p>
       </div>
     </div>
 
+    <!-- Nav-bar -->
     <section id="nav-bar">
       <nav class="container">
-        <a href="#"><i class="icon-user"></i>Thông tin</a>
-        <a href="#"><i class="icon-doc-text-inv"></i>Lý lịch</a>
-        <a href="#">
-          <div>
-            <h2>Nguyễn Văn A</h2>
-            <p>Full Stack Developer</p>
-          </div>
-        </a>
-        <a href="#"><i class="icon-mail-alt"></i>Chứng chỉ</a>
-        <a href="#"><i class="icon-star-1"></i>Dự Án</a>
+        <a class="nav" href="#"><i class="icon-user"></i>Thông tin</a>
+        <a class="nav" href="#"><i class="icon-doc-text-inv"></i>Lý lịch</a>
+        <a class="nav3" href="#"
+          ><img
+            src="./images/default-avatar.webp"
+            alt="avatar"
+            width="24px"
+            height="28px"
+        /></a>
+        <a class="nav" href="#"><i class="icon-mail-alt"></i>Chứng chỉ</a>
+        <a class="nav" href="#"><i class="icon-star-1"></i>Dự Án</a>
       </nav>
     </section>
 
+    <!-- About -->
     <section id="about" class="bg-grey">
       <div class="container">
         <div id="target">
@@ -63,8 +73,10 @@
       </div>
     </section>
 
+    <!-- Job-info -->
     <section id="job-info">
       <div class="container">
+        <!-- Kinh nghiệm -->
         <div style="margin-top: 20px">
           <h1>
             Kinh nghiệm
@@ -99,6 +111,7 @@
             </div>
           </div>
         </div>
+        <!-- Học vấn -->
         <div style="margin-top: 20px">
           <h1>
             Học vấn
@@ -123,6 +136,7 @@
             </div>
           </div>
         </div>
+        <!-- Hoạt động -->
         <div style="margin-top: 20px">
           <h1>
             Hoạt động
@@ -147,12 +161,13 @@
             </div>
           </div>
         </div>
+        <!-- Sở thích -->
         <div style="margin-top: 20px" id="hobby">
           <h1>
             Sở thích
             <i class="ic-telescope"></i>
           </h1>
-          <div class="content">
+          <div class="content-hobby">
             <div>
               <i class="ic-megaphone"></i>
               <p>Âm nhạc</p>
@@ -171,6 +186,7 @@
             </div>
           </div>
         </div>
+        <!-- Ngôn ngữ -->
         <div style="margin-top: 20px" id="language">
           <h1>
             Ngôn ngữ
@@ -189,6 +205,7 @@
             <div class="3"></div>
           </div>
         </div>
+        <!-- Kỹ năng -->
         <div style="margin-top: 20px" id="skill">
           <h1>
             Kỹ năng
@@ -221,11 +238,13 @@
         </div>
       </div>
     </section>
+
+    <!-- Chứng chỉ -->
     <section id="certificate" class="bg-grey">
       <div class="container">
         <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
         <div class="certificate-content">
-          <div>
+          <div class="certificate-item-1">
             <img src="./images/Cert_DBI.png" alt="web certificate of funix" />
             <div class="certificate-detail">
               <h3>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h3>
@@ -235,7 +254,7 @@
               </ul>
             </div>
           </div>
-          <div>
+          <div class="certificate-item-2">
             <img
               src="./images/Cert_PRF.png"
               alt="javascript certificate of funix"
@@ -248,7 +267,7 @@
               </ul>
             </div>
           </div>
-          <div>
+          <div class="certificate-item-3">
             <img
               src="./images/Cert_WEB.png"
               alt="database certificate of funix"
@@ -265,6 +284,7 @@
       </div>
     </section>
 
+    <!-- Dự án -->
     <section id="project">
       <div class="container">
         <h1 class="section-title">Dự án</h1>
@@ -344,6 +364,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <section id="footer" class="bg-grey">
       <div class="container">
         <ul>
