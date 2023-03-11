@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ html{
+    font-family:  "Roboto", sans-serif;
+    color: #333;
+ }
+
+/* Navbar */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid #888 ;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar header{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#navbar li{
+    padding: 25px ;
+    border-top: 1px solid #222;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+
+/* main-doc */
+#main-doc{
+    /* position: absolute; */
+    margin-left: 340px;
+    padding: 20px; 
+
+}
+
+.main-section{
+}
+
+.main-section header{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main-section article{
+    margin: 0  0 30px 20px;
+    
+}
+
+.main-section article p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+code{
+    display: block;
+    background-color: #9999998f;
+    padding: 20px;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.main-section li{
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px){
+    #navbar{
+        height: 250px ;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar ul{
+        height: 200px;
+        overflow: auto;
+    }
+
+    #navbar li{
+        padding: 20px;
+    }
+
+    #navbar .header{
+        text-align: center;
+    }
+    #main-doc{
+        position: absolute;
+        left: 0;
+        top: 270px;
+        margin: 0;
+    }
+}

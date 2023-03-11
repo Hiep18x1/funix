@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div class="logo">
+          <img id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <div  ><a class="nav-link"href="#feature">Feature</a></div>
+          <div ><a class="nav-link" href="#how-it-work">How It Works</a></div>
+          <div ><a class="nav-link"href="#pricing">Pricing</a></div>
+        </nav>
+      </header>
+      <section class="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter ypur email here..."
+          />
+          <input id="submit" type="submit" value="GET STARTED" />
+        </form>
+      </section>
+
+      <section class="container">
+        <!-- feature -->
+        <div id="feature">
+          <div class="flex">
+            <div class="flex icon">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <div class="describe flex">
+              <h3>Premium Materials</h3>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="describe flex">
+              <h3>Premium Materials</h3>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex icon">
+              <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <div class="describe flex">
+              <h3>Premium Materials</h3>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- how-it-work -->
+        <div id="how-it-work" class="flex">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/aHOVa6rIYbg" allowfullscreen></iframe>
+      </iframe>
+        </div>
+
+        <!-- Pricing -->
+        <div id="pricing" class="flex">
+        <div class="product flex">
+          <div>
+            <h3>TENOR TROMBONE</h3>
+          </div>
+          <h4>600$</h4>
+          <ul>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum dolor.
+            </li>
+          </ul>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product flex">
+          <div>
+            <h3>BASS TROMBONE
+            </h3>
+          </div>
+          <h4>900$</h4>
+          <ul>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum dolor.
+            </li>
+          </ul>
+          <button class="btn">Select</button>
+        </div>
+
+        <div class="product flex">
+          <div>
+            <h3>VALVE TROMBONE
+            </h3>
+          </div>
+          <h4>1200$</h4>
+          <ul>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum.
+            </li>
+            <li>Lorem ipsum dolor.
+            </li>
+          </ul>
+          <button class="btn">Select</button>
+        </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="flex">
+        <ul class="flex">
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+        <p>Copyright 2016, Original Trombones</p>
+      </footer>
+    </div>
+  </body>
+</html>
