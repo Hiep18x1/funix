@@ -1,0 +1,434 @@
+/*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*
+    Color
+    Gray: #343a40 
+    blue: #339af0
+ */
+/* Reset CSS */
+
+:root {
+    --blue: #339af0;
+    --gray: #343a40;
+    --gray-lighter: #495057;
+  }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'inter' ,sans-serif;
+    color: var(--gray);
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    max-width: 1170px;
+    margin: auto;
+    display: block;
+    /* padding: 30px 50px; */
+}
+
+/* Banner */
+#banner{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #e9ecef;
+    position: relative;
+    /*  position: relative -> responsive cho background img*/
+}
+
+.banner-content h1{
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    white-space: nowrap;
+/*     white-space: nowrap -> mục đích để h1 không bị xuống dòng khi thu ngắn kích thước*/
+}
+
+/* Nav-bar */
+#navbar {
+    padding: 0;
+}
+
+.nav-item{
+    flex: 1;
+    border: 1px solid #e6dede;
+}
+
+.nav-item3{
+    flex: 2;
+}
+
+#navbar i{
+    padding-right: 5px;
+}
+
+/* nav-bar avatar */
+.avatar{
+
+    transform: scale(6);
+    border: 1px solid #f1f3f5 ;
+    border-radius: 50%;
+}
+
+/* About */
+#about .container {
+    gap: 30px;
+}
+
+
+#about .container div{
+    flex: 1;
+}
+
+#about h1{
+    font-size: 26px;
+}
+
+
+#personal-info ul{
+    list-style: none;
+    line-height: 2;
+    padding: 0;
+}
+
+#personal-info span{
+    font-weight: 600;
+}
+
+#personal-info .info-social{
+    color:  var(--blue);
+
+}
+
+
+
+/* job-info */
+
+#job-info .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2;
+    gap: 16px;
+}
+
+
+#job-info .container>div {
+    border: 1px solid #00000011;
+    padding: 48px 24px 48px 48px;
+    min-width: 0;
+    /*  min-width: 0 -> Khi ta thu nhỏ màn hình (chưa đến tablet) thì 3 col sẽ thu nhỏ lại chứ không bị mất đi 1 phần nào*/
+}
+
+#job-info h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+#job-info i{
+    font-size: 48px;
+    color: var(--gray-lighter);
+}
+
+/* Kinh nghiệm, học vấn, Hoạt động */
+
+.timeline>div{
+    position: relative;
+    line-height: 1.5;
+    font-size: 12px;
+    color: var(--gray-lighter);
+}
+
+.timeline>div::before{
+    content: "\2022"; 
+    color: var(--blue);
+    font-size: 24px;
+    position: absolute;
+    top: -8px;
+    left: -24px;
+}
+
+.timeline ul {
+    padding-bottom: 24px;
+}
+.timeline  li{
+    list-style: none;
+    padding-left: 12px;
+    position: relative;
+}
+
+.timeline li::before{
+    content: '-';
+    position: absolute;
+    left: -2px;
+}
+
+.timeline span{
+    display: block;
+}
+.timeline span:first-child{
+    font-weight: 700;
+}
+ .timeline span:nth-child(2){
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gray-lighter);
+    padding-bottom: 12px;
+ }
+
+ .timeline b{
+    background-color:var(--blue) ;
+    color: #fff;
+    padding: 1px 12px;
+    border-radius: 10px;
+ }
+
+
+ /* Sở thích */
+
+ #hobby{
+
+    padding-left: 10px !important;
+ }
+
+ #hobby .content-hobby{
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    text-align: center;
+    
+ }
+
+
+
+ #hobby .content-hobby i{
+    font-size: 14px;
+    color: var(--blue);
+    border: 1px solid #339af0;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+ }
+
+/* Ngôn ngữ và kỹ năng*/
+
+#language div,
+#skill div{
+    font-size: 12px;
+    font-weight: 700;
+}
+/* Skill bar */
+#skill-bar{
+    display: flex;
+    gap: 12px;
+}
+
+#skill-bar div{
+    height: 6px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 24px 0;
+    background-color: #dee2e6;
+}
+
+
+/* Chứng chỉ giải thưởng */
+
+#certificate .container{
+    padding: 48px 24px 48px 24px;
+}
+
+#certificate h1{
+    margin-bottom: 32px;
+}
+
+
+/* Tạo gird layout   với 2 hàng và 2 cột */
+.certificate-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.certificate-content>div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+
+}
+
+.certificate-content img{
+    max-width: 50%; /* makes the image responsive to its container */
+    height: auto; /* maintains the aspect ratio of the image */
+
+}
+.certificate-content h3{
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+
+/* certificate-detail */
+
+.certificate-detail ul{
+    list-style: none;
+    padding-left: 0;
+}
+ 
+.certificate-detail li{
+    position: relative;
+    padding-left: 10px;
+    line-height: 1.7;
+}
+
+
+.certificate-detail li::before{
+    content: '-';
+    position: absolute;
+    left: -2px;
+}
+
+
+/* Tạo đường kẻ  */
+.certificate-item-2{
+    position: relative;
+    padding-left: 10px;
+    border-left: 2px solid #d6c08d;
+}
+/* .certificate-item-2::before{
+    content: "";
+    width: 2px;
+    background-color: #d6c08d;
+} */
+
+
+#certificate .container{
+    position: relative;
+}
+#certificate .container::after{
+    content: "";
+    width: 95%;
+    height: 2px;
+    background: #d6c08d;
+    top: 52%;
+    position: absolute;
+}
+
+
+/* Dự án */
+#project .container{
+    padding: 48px 24px 48px 24px;
+}
+
+#project h1{
+    margin-bottom: 32px;
+}
+
+.project-content{
+    display: flex;
+    gap: 20px;
+}
+.project-content div{
+    min-width: none;
+}
+
+.project-content img{
+    max-width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+}
+.project-detail{
+    margin: -3px;
+    
+}
+
+.project-detail h2{
+    font-size: 14px;
+    padding: 24px 12px;
+    border: 1px solid #f1f3f5 ;
+
+}
+
+
+.project-detail div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    padding: 12px 0px ;
+    border: 1px solid #f1f3f5 ;
+    flex-wrap: wrap;
+    
+}
+
+.project-detail div:nth-child(2) span:first-child{
+    padding: 4px 12px;
+    border-radius: 10px;
+    color: #e9ecef;
+    background-color: var(--blue);
+}
+
+
+.project-detail p{
+    padding: 16px;
+    display: block;
+    border: 1px solid #f1f3f5 ;
+    display: flex;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.project-detail p span{
+    min-width: 30%;
+}
+
+/* Footer */
+#footer .container{
+    padding: 32px 24px 32px 24px;
+}
+#footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 0;
+}
+
+#footer li{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+#footer i{
+    color: var(--blue);
+    font-size: 200%;
+}
+
+
+
+
+
+
+
+
+

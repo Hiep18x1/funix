@@ -1,0 +1,53 @@
+
+/* navbar */
+.navbar-nav{
+    margin-right: 10px;
+}
+
+.nav-item{
+    text-align: left;
+}
+
+/* about */
+
+#about #personal-info {
+    margin-left: 0 !important;
+}
+
+/* job-info */
+
+#job-info .container{
+    grid-template-columns: 1fr ;
+}
+
+/* Certificate */
+.certificate-content{
+    grid-template-columns: 1fr;
+}
+.certificate-content>div{
+    flex-direction: column;
+}
+
+#certificate .container::after{
+    display: none;
+}
+
+.certificate-content>div{
+    border-bottom: 2px solid #d6c08d;
+}
+.certificate-item-2{
+    border-left: none;
+}
+
+/* Project */
+
+.project-content{
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Footer */
+
+#footer span{
+    display: none;
+}

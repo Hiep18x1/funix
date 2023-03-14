@@ -1,0 +1,30 @@
+.carousel{
+    margin-top: 40px;
+}
+
+.bg-img1{
+    height: 400px;
+    background-image: url(https://wallpapercave.com/wp/wp2551071.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    /* filter: brightness(0.6); */
+}
+
+.bg-img2{
+    height: 400px;
+    background-image: url(https://img.wallpapic.com/i6296-823-837/medium/reflection-nature-autumn-lake-wallpaper.jpg),linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    /* filter: brightness(0.6); */
+
+}
+
+.bg-img3{
+    height: 400px;
+    background-image: url(https://www.teahub.io/photos/full/245-2451684_natural-view-wallpaper-ttc4f77-hd-nature-wallpapers-for.jpg),linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    /* filter: brightness(0.6); */
+}
+
+p{
+    color: #fff;
+}

@@ -1,0 +1,53 @@
+/* navbar */
+#navbar li:nth-child(3){
+    display: none;
+}
+
+
+/* about */
+#about #target{
+    margin-top: 5px !important;
+    margin-right:10px !important
+}
+
+#about #personal-info{
+    margin-top: 5px !important;
+    margin-left: 10px !important;
+}
+
+#about h1{
+    font-size: 24px;
+}
+
+#about {
+    font-size: 14px;
+}
+
+
+/* job-info */
+
+#job-info .container{
+    grid-template-columns: 1fr 1fr;
+}
+
+#hobby .content-hobby {
+    gap: 7px
+}
+#hobby .content-hobby div {
+    min-width: 0
+}
+
+/* Certificate */
+.certificate-content{
+    gap: 0;
+}
+.certificate-content>div{
+    flex-direction: column;
+}
+
+
+/* project */
+
+.project-detail p{
+    padding: 2px ;
+}
